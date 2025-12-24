@@ -18,7 +18,7 @@ def start_parameter_optimization():
     Grid Search optimizer for Aegis-LOB champion weights.
     Ties together the Monte Carlo engine and the Stoikov Strategy.
     """
-    print("--- 🚀 AEGIS-LOB PARAMETER OPTIMIZER INITIATED ---")
+    print("--- AEGIS-LOB PARAMETER OPTIMIZER INITIATED ---")
     
     # Define the search space
     gammas = [0.1, 0.15, 0.2]       # Risk aversion profiles

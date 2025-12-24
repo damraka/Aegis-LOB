@@ -7,10 +7,10 @@ class PricePredictorLSTM(nn.Module):
         self.hidden_size = hidden_size
         self.num_layers = num_layers
         
-        # LSTM Katmanı: Geçmiş verideki örüntüleri yakalar
+        # LSTM Layer: Processes time series data
         self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True)
         
-        # Çıkış Katmanı: LSTM'den gelen bilgiyi fiyat tahmini (0-1 arası) haline getirir
+        # Exit Layer: Outputs the predicted price
         self.fc = nn.Linear(hidden_size, 1)
 
     def forward(self, x):
@@ -18,5 +18,5 @@ class PricePredictorLSTM(nn.Module):
         c0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
         
         out, _ = self.lstm(x, (h0, c0))
-        out = self.fc(out[:, -1, :]) # Sadece en son adımın tahminini al
+        out = self.fc(out[:, -1, :]) # Get the last time step output
         return out

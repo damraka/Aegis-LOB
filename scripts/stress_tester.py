@@ -17,7 +17,7 @@ def run_stress_test(scenario_name, file_path):
     Executes the bot against a specific historical market regime.
     Updated to handle the triple return value (bid, ask, current_qty).
     """
-    print(f"--- 🧪 TEST SCENARIO: {scenario_name} ---")
+    print(f"--- TEST SCENARIO: {scenario_name} ---")
     df = pd.read_csv(file_path)
     
     # Locking in champion settings for validation

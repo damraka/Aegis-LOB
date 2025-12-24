@@ -26,7 +26,7 @@ def train_with_real_data(file_path, epochs=50, seq_length=50):
         print(f"❌ ERROR: Dataset not found at {actual_file_path}")
         return
 
-    print(f"--- 🚀 AEGIS-LOB AI TRAINING INITIATED: {os.path.basename(actual_file_path)} ---")
+    print(f"--- AEGIS-LOB AI TRAINING INITIATED: {os.path.basename(actual_file_path)} ---")
     
     # 2. Data Preprocessing
     df = pd.read_csv(actual_file_path)
