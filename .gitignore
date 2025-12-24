@@ -19,7 +19,6 @@ dist/
 
 # Aegis-LOB Data & Models
 data/*.csv
-data/binance_BTC_USDT_1m.csv
 data/models/*.pth
 
 # Jupyter Notebook checkpoints
