@@ -1,0 +1,27 @@
+# Python Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.venv/
+env/
+.vscode/
+
+# Build and C++ Binaries
+build/
+dist/
+*.pyd
+*.so
+*.exe
+*.obj
+*.o
+
+# Aegis-LOB Data & Models
+# Not: Örnek olması için sadece küçük veri setlerini bırakıyoruz.
+data/*.csv
+!data/binance_BTC_USDT_1m.csv
+data/models/*.pth
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
