@@ -18,9 +18,8 @@ dist/
 *.o
 
 # Aegis-LOB Data & Models
-# Not: Örnek olması için sadece küçük veri setlerini bırakıyoruz.
 data/*.csv
-!data/binance_BTC_USDT_1m.csv
+data/binance_BTC_USDT_1m.csv
 data/models/*.pth
 
 # Jupyter Notebook checkpoints
